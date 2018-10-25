@@ -1,0 +1,199 @@
+/*========= Site Plan Intro =========*/
+.plan__content {
+  margin-right: -2.8125rem;
+  margin-top: -2rem;
+}
+
+.plan__item {
+  width: 16.5rem;
+  margin-right: 2.8125rem;
+  margin-top: 2rem;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan__item > div[class*="plan__"] {
+  border-radius: .5rem;
+  position: relative;
+  height: 33rem;
+}
+
+@media (min-width:576px) {
+  .plan__item > div[class*="plan__"] {
+    height: 34rem;
+  }
+}
+
+.plan__day {
+  background-image: linear-gradient(-220deg, #FFCC12 0%, #F14C04 86%);
+}
+
+.plan__icn {
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.plan__icn svg {
+  width: 4.5rem;
+}
+
+.plan__name {
+  margin-bottom: 1rem;
+}
+
+.plan__name p {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.plan__description {
+  width: 67%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.plan__description p {
+  text-align: justify;
+}
+
+.plan__description span {
+  font-weight: 600;
+}
+
+.plan__price {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width:576px) {
+  .plan__price {
+    bottom: 2rem;
+  }
+}
+
+.plan__number {
+  text-align: center;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.plan__number span {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.plan__unit {
+  text-align: center;
+}
+
+.plan__week {
+  background-image: linear-gradient(-44deg, #479035 0%, rgba(38,255,178,0.77) 100%);
+}
+
+.plan__flex { 
+  background-image: linear-gradient(-220deg, #12FFFE 0%, #138EA9 86%);
+}
+
+.plan__flex .plan__icn svg{
+  width: 3rem;
+}
+
+.plan__fixed {
+  background-image: linear-gradient(-45deg, #3023AE 0%, #C86DD7 100%);
+}
+
+.plan__btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1.5rem;
+  border-radius: .5rem;
+  padding: 1.25rem 2.625rem;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.125rem;
+  cursor: pointer;
+  border:none;
+}
+
+.plan__day + .plan__btn {
+  background-image: linear-gradient(-209deg, #FFCC12 0%, #F14C04 77%);
+}
+
+.plan__week + .plan__btn {
+  background-image: linear-gradient(-44deg, #479035 0%, rgba(38,255,178,0.77) 100%);
+}
+
+.plan__flex + .plan__btn {
+  background-image: linear-gradient(-220deg, #12FFFE 0%, #138EA9 86%);
+}
+
+.plan__fixed + .plan__btn {
+  background-image: linear-gradient(-45deg, #3023AE 0%, #C86DD7 100%);
+}
+
+.detail__content {
+  overflow-x: auto;
+} 
+
+table.table{
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  max-width: 1329px;
+  min-width: 943px;
+}
+
+thead th span{
+  font-size: 2rem;
+  font-weight: 400;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+thead th:first-child {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+thead th:nth-child(2) span {
+  background-image: linear-gradient(-209deg, #FFCC12 0%, #F14C04 77%);
+}
+
+thead th:nth-child(3) span {
+  background-image: linear-gradient(-44deg, #479035 0%, rgba(38,255,178,0.77) 100%);
+}
+
+thead th:nth-child(4) span {
+  background-image: linear-gradient(-220deg, #12FFFE 0%, #138EA9 86%);
+}
+
+thead th:nth-child(5) span {
+  background-image: linear-gradient(-45deg, #3023AE 0%, #C86DD7 100%);
+}
+
+.detail__content tbody td {
+  vertical-align: middle;
+}
+
+tbody i {
+  color: #20BAA0;
+  font-size: 1.125rem;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(185, 194, 182,.3);
+}
+
+

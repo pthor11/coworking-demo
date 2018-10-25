@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>StarHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Other CSS Files -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+
+  <!-- Main Stysheet Files -->
+  <link rel="stylesheet" href="../css/Main.css">
+  <link rel="stylesheet" href="../css/Contact.css">
+</head>
+<body>
+  <!-- Site Header -->
+  <header class="site__header fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a href="../html/Homepage.html" class="navbar-brand d-flex align-items-center">
+          <div class="brand__icon d-flex justify-content-center align-items-center"><span>S</span></div>
+          <div>
+            <p class="brand__title">StarHub</p>
+            <p class="brand__description">coworking space</p>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="header-navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../html/Homepage.html">Trang chủ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Về StarHub <i class="fa fa-angle-down"></i></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../html/About Us.html">Giới thiệu</a>
+                <a class="dropdown-item" href="#">Tuyển dụng</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dịch vụ <i class="fa fa-angle-down"></i></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../html/Plan Member.html">Gói thành viên</a>
+                <a class="dropdown-item" href="#">Gói văn phòng</a>
+                <a class="dropdown-item" href="#">Gói sự kiện</a>
+              </div>
+            </li>
+            <li class="nav-item"><a href="../html/Blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="../html/Contact.html" class="nav-link">Liên hệ</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#logIn">Đăng nhập</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header><!-- end Site Header -->
+  
+  <!-- Site Hero Img -->
+  <section class="site__hero-img">
+    <div class="content wow animated fadeInLeft">
+      <h1>liên hệ</h1>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../html/Homepage.html">trang chủ</a></li>
+        <li class="breadcrumb-item active">liên hệ</li>
+      </ol>
+    </div>
+  </section><!-- end Site Hero Img -->
+
+  <!-- Site Map -->
+  <section class="site__map section--pd">
+    <header class="section__header text-center wow animated fadeInUp delay-1s">
+      <h1 class="title">Hướng dẫn đi đường</h1>
+      <hr>
+    </header>
+    <div class="map__content">
+      <div class="map__direction wow animated fadeInUp delay-1s">
+        <ul class="map__link nav nav-pills mb-3 row">
+          <li class="nav-item col-sm-3 text-center">
+            <a class="nav-link active" data-toggle="pill" href="#address">Trụ sở StarHub</a>
+          </li>
+          <li class="nav-item col-sm-3 text-center">
+            <a class="nav-link" data-toggle="pill" href="#showWay">Hướng dẫn đi đường</a>
+          </li>
+        </ul>
+        <div class="tab-content map__detail">
+          <div class="tab-pane fade show active" id="address">
+            <p>Công ty TNHH một thành viên StarHub Coworking Space</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-map-marker-alt"></i><p>số 4, ngõ 14, đường Nguyễn Đình Chiều, quận Hai Bà Trưng, Hà Nội</p></li>
+              <li><i class="fas fa-mobile-alt"></i><p>0934 969 999</p></li>
+              <li><i class="far fa-envelope"></i><p>info@starhub.com</p></li>
+              <li><i class="far fa-clock"></i><p>9:00AM - 21:00PM </p></li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="showWay">
+            <p>StarHub được đặt tại khu vực trung tâm với vị trí thuận lợi, tiện việc đi lại cho các thành viên. Bạn chỉ mất:</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check"></i><p>3 phút từ Nhà hát lớn</p></li>
+              <li><i class="fas fa-check"></i><p>5 phút từ cầu Chương Dương</p></li>
+              <li><i class="fas fa-check"></i><p>5 phút từ Times City</p></li>
+              <li><i class="fas fa-check"></i><p>6 phút từ Đại học Bách Khoa</p></li>
+            </ul>
+            <p>Bạn có thể đến StarHub bằng: Ô tô (có chỗ đỗ xe), Xe máy (gửi xe miễn phí) và Xe bus</p>
+          </div>
+        </div>
+      </div>
+      <div class="container wow animated fadeInUp">
+        <div class="map__canvas">
+          <iframe class="map__iframe" src="https://maps.google.com/maps?q=techmaster%20vietnam&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> 
+        </div>
+      </div>
+    </div>
+  </section><!-- end Site Map -->
+
+  <!-- Site Form -->
+  <section class="site__form section--dark section--pd">
+    <header class="section__header text-center wow animated fadeInUp">
+      <h1 class="title">Liên hệ StarHub</h1>
+      <hr>
+      <p class="description w-80 mx-auto">Hãy hoàn thành biểu mẫu dưới đây để đăng ký thành viên, tìm hiểu và sử dụng dịch vụ của StarHub</p>
+    </header>
+    <div class="form__content container wow animated fadeInUp">
+      <form>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="personName">Họ tên <span>(*)</span></label>
+            <input type="text" class="form-control" id="personName" placeholder="Dành cho cá nhân">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="personJob">Nghề nghiệp</label>
+            <input type="text" class="form-control" id="personJob" placeholder="Nghề nghiệp">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-5">
+            <label for="companyName">Tên doanh nghiệp</label>
+            <input type="text" class="form-control" id="companyName" placeholder="Dành cho doanh nghiệp">
+          </div>
+          <div class="form-group col-md-5">
+            <label for="companyField">Ngành nghề</label>
+            <input type="text" class="form-control" id="companyField" placeholder="Ngành nghề">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="companyTax">Mã số thuế</label>
+            <input type="number" class="form-control" id="companyTax" placeholder="Mã số thuế">
+            </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="email">Email <span>(*)</span></label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="telephone">Số điện thoại</label>
+            <input type="number" class="form-control" id="telephone" placeholder="Số điện thoại">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="password1">Mật khẩu <span>(*)</span></label>
+            <input type="password" class="form-control" id="password1" placeholder="Ít nhất 6 ký tự, gồm cả số, chữ thường, chữ hoa">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="password2">Nhập lại mật khẩu <span>(*)</span></label>
+            <input type="password" class="form-control" id="password2" placeholder="Ít nhất 6 ký tự, gồm cả số, chữ thường, chữ hoa  ">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Địa chỉ</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Địa chỉ">
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="form__service">Dịch vụ <span>(*)</span></label>
+            <select id="form__service" class="form-control">
+              <option selected>Dịch vụ bạn quan tâm</option>
+              <option disabled>Gói thành viên</option>
+              <option value="">Thành viên linh hoạt</option>
+              <option value="">Thành viên tháng</option>
+              <option value="">Chỗ ngồi cố định</option>
+              <option value="">Văn phòng riêng</option>
+              <option disabled>Gói văn phòng</option>
+              <option value="">Văn phòng 4 người</option>
+              <option value="">Văn phòng 6 người</option>
+              <option value="">Văn phòng 10 người</option>
+              <option value="">Văn phòng 15 người</option>
+              <option disabled>Gói hội thảo</option>
+              <option value="">Hội thảo 60-100 người</option>
+              <option value="">Hội thảo 101-150 người</option>
+              <option value="">Hội thảo 150-200 người</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="form__date">Thời gian</label>
+            <input type="date" name="form__date" max="2100-12-31" min="2015-01-01" class="form-control">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="form__amount">Số người</label>
+            <input type="number" class="form-control" id="form__amount" placeholder="Số người">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-2"><button type="submit" class="btn form__btn btn-block">Đăng ký</button></div>
+        </div>
+      </form>
+    </div>
+  </section><!-- end Site Form -->
+
+  <!-- Site Footer -->
+  <section class="site__footer section--pd">
+    <div class="row justify-content-around wow animated fadeInUp">
+      <div class="footer__contact col-12 col-lg-4 ">
+        <h2>Liên hệ</h2>
+        <p>Công ty TNHH một thành viên StarHub Coworking Space</p>
+        <p>Giấy chứng nhận ĐKKD số : 0107511134 do Sở KH&ĐT Hà Nội cấp ngày 01/02/2015</p>
+        <ul class="contact__detail list-unstyled">
+          <li><i class="fas fa-map-marker-alt"></i><span>số 4, ngõ 14, đường Nguyễn Đình Chiều, quận Hai Bà Trưng, Hà Nội</span></li>
+          <li><i class="fas fa-mobile-alt"></i><span>0934 969 999</span></li>
+          <li><i class="far fa-envelope"></i><span>info@starhub.com</span></li>
+          <li><i class="far fa-clock"></i><span>9:00AM - 21:00PM </span></li>
+        </ul>
+        <ul class="contact__social list-inline">
+          <li class="list-inline-item"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li class="list-inline-item"><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+          <li class="list-inline-item"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer__update col-12 col-lg-4 ">
+        <h2>Tin tức StarHub</h2>
+        <p>Hãy đăng ký để có thể nhận được những tin tức về sự kiện và chương trình ưu đãi mới nhất sắp diễn ra tại StarHub</p>
+        <form action="">
+            <input type="text" class="form-control" id="updateName" placeholder="Tên của bạn">
+            <input type="email" class="form-control" id="updateEmail" placeholder="Email của bạn">
+            <textarea class="form-control" id="updateMessage" rows="3" placeholder="Yêu cầu của bạn"></textarea>
+            <button type="submit">Đăng ký</button>
+        </form>
+      </div>
+      <div class="footer__insta d-none d-lg-block col-lg-4 ">
+        <h2>Instagram</h2>
+        <p>StarHub đã có tài khoản Instagram chính thức. Cùng like và theo dõi nhé</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-4">
+              <img src="../img/homepage/Insta-1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <img src="../img/homepage/Insta-2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <img src="../img/homepage/Insta-3.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <img src="../img/homepage/Insta-4.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <img src="../img/homepage/Insta-5.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <img src="../img/homepage/Insta-6.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="footer__to-top"><i class="fas fa-chevron-up"></i></button>
+  </section><!-- end Site Footer -->
+
+  <!-- Site Login -->
+  <div id="logIn" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Welcome back!</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <label for="formUser">Email hoặc username</label>
+              <input type="text" class="form-control" id="formUser">
+            </div>
+            <div class="form-group">
+              <label for="formPW">Mật khẩu</label>
+              <input type="password" class="form-control" id="formPW">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="formCheck">
+                  <label class="form-check-label" for="formCheck">
+                    Ghi nhớ
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Đăng nhập</button>  
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p>Bạn chưa là thành viên? <a href="">Đăng ký tại đây</a></p>
+        </div>
+      </div>
+    </div>
+  </div><!-- end Site Login -->
+
+  <!-- JavaScript Libraries --> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Main JavaScript Files -->
+  <script src="../js/Main.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+/*========= Site Founders =========*/
+.site__founders {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.founders__item .row {
+  margin-top: -1.5rem;
+}
+
+.founders__item div[class*="col-"] {
+  margin-top: 1.5rem;
+}
+
+.founders__item img {
+  width: 100%;
+  height: auto;
+  border-radius: .5rem;
+}
+
+.founders__item p:not(:last-child) {
+  font-style: italic;
+  font-size: 0.9rem;
+}  /*========= end Site Founders =========*/
+
+
+/*========= Site Platform =========*/
+.platform__content .row {
+  margin-top: -2rem;
+}
+
+.platform__item {
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 576px) {
+  .platform__item {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .platform__item {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+}
+
+.platform__item svg {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.platform__item h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.platform__item hr {
+  border: .5px solid #20BAA0;
+  width: 5rem;
+  height: 0;
+}
+
+.platform__item p {
+  text-align: justify;
+}  /*========= end Site Platform =========*/
+
+
+/*========= Site Founders Position =========*/
+.founders-pos__content .row {
+  margin-top: -2rem;
+}
+
+.founders-pos__item {
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 2rem;
+}
+
+@media (min-width: 992px) {
+  .founders-pos__item {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+.founders-pos__info {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.founders-pos__info::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.founders-pos__info img {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  top: 0;
+  z-index: 49;
+}
+
+.founders-pos__info .overlay {
+  height: 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  background-color: rgba(46, 46, 46,.6);
+  transition: .5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.founders-pos__info:hover .overlay {
+  height: 100%;
+}
+
+.founders-pos__social i {
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.founders-pos__social i {
+  margin-left: 1rem;
+}
+
+.founders-pos__social i:first-child {
+  margin-left: 0;
+}
+
+.founders-pos__social i:hover {
+  color: #20BAA0;
+}
+
+.founders-pos__name {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.founders-pos__pos {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 600;
+  color:#20BAA0;
+}
+
+.founders-pos__background {
+  text-align: center;
+}  /*========= end Site Founders Position =========*/
+
+
+/*========= Site Facts =========*/
+.site__facts {
+  background-image: url(../img/homepage/hero-img-2.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.site__facts .section__header * {
+  color: white;
+}
+.facts__item {
+  text-align: center;
+}
+
+.facts__number {
+  font-family: 'Bree Serif', serif;
+  font-weight: 300;
+  font-size: 5rem;
+  color: #20BAA0;
+}
+
+.facts__name {
+  color: white;
+}
+
+.facts__name span {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}  /*========= end Site Facts =========*/
+
+
+/*========= Site Partners =========*/
+.owl-carousel .owl-item .partners__item img {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partners__item p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.partners__item span {
+  color: #20BAA0;
+  font-size: 1.25rem;
+}  /*========= end Site Partners =========*/
+
+
+/*========= Site FAQ =========*/
+.site__faq.section--pd{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.faq__question {
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+  background-image: url(../img/homepage/hero-img-3.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.faq__question i {
+  color: white;
+}
+
+.faq__question i[class*="minus"] {
+  display: none;
+}
+
+.faq__question span {
+  margin-left: 1rem;
+  color: white;
+  font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+  .faq__question span {
+    font-size: 1.5rem;
+  }
+}
+
+.faq__answer p {
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 0;
+}
+
+.faq__form {
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  margin-top: 2rem;
+}
+
+.faq__form .form-row {
+  margin-top: -1rem;
+}
+.faq__form .form-row div[class*="col"] {
+  margin-top: 1rem;
+}
+
+.faq__submit {
+  width: 100%;
+  padding: .375rem .75rem;
+  line-height: 1.5;
+  color: white;
+  background-color: #20BAA0;
+  border-radius: .25rem;
+  border: none;
+}  /*========= end Site FAQ =========*/

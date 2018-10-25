@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>StarHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Other CSS Files -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+
+  <!-- Main Stysheet Files -->
+  <link rel="stylesheet" href="../css/Main.css">
+  <link rel="stylesheet" href="../css/Homepage.css">
+</head>
+<body>
+  <!-- Site Header -->
+  <header class="site__header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a href="../html/Homepage.html" class="navbar-brand d-flex align-items-center">
+        <div class="brand__icon d-flex justify-content-center align-items-center"><span>S</span></div>
+        <div>
+          <p class="brand__title">StarHub</p>
+          <p class="brand__description">coworking space</p>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="header-navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../html/Homepage.html">Trang chủ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Về StarHub <i class="fa fa-angle-down"></i></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="../html/About Us.html">Giới thiệu</a>
+              <a class="dropdown-item" href="#">Tuyển dụng</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dịch vụ <i class="fa fa-angle-down"></i></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="../html/Plan Member.html">Gói thành viên</a>
+              <a class="dropdown-item" href="#">Gói văn phòng</a>
+              <a class="dropdown-item" href="#">Gói sự kiện</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="../html/Blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="../html/Contact.html" class="nav-link">Liên hệ</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#logIn">Đăng nhập</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header><!-- end Site Header -->
+
+  <!-- Site Hero Img -->
+  <section class="site__hero-img carousel slide" data-ride="carousel" data-interval='false'>
+    <ol class="carousel-indicators">
+      <li data-target=".site__hero-img" data-slide-to="0" class="active"></li>
+      <li data-target=".site__hero-img" data-slide-to="1"></li>
+      <li data-target=".site__hero-img" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="../img/homepage/hero-img-1.png" alt="first slide">
+        <div class="carousel-caption mx-auto wow animated fadeInUp slow">
+          <h1>Không gian làm việc</h1>
+          <p class="w-75 mx-auto">StarHub mang lại một không gian làm việc hiện đại, chuyên nghiệp và sáng tạo với
+            cơ sở vật chất tiện nghi và chất lượng dịch vụ hàng đầu, đạt tiêu chuẩn quốc tế.</p>
+          <button type="button">Đăng ký</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../img/homepage/hero-img-2.png" alt="first slide">
+        <div class="carousel-caption mx-auto wow animated fadeInRight slow d-flex flex-column align-items-start">
+          <h1>Mạng lưới khởi nghiệp</h1>
+          <p class="w-75 text-left">StarHub là nơi hội tụ những doanh nghiệp và cá nhân trẻ, sáng tạo, với hoài bão và khát khao đem lại những thay đổi to lớn và tích cực cho xã hội.</p>
+          <button type="button">Đăng ký</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../img/homepage/hero-img-3.png" alt="first slide">
+        <div class="carousel-caption mx-auto wow animated fadeInLeft slow d-flex flex-column align-items-end">
+          <h1>Dịch vụ hỗ trợ</h1>
+          <p class="w-75 text-right">Các nhu cầu của từng đối tượng khách hàng khác nhau được StarHub nghiên cứu kỹ lưỡng và được hỗ trợ tối đa nhằm mục tiêu đạt kết quả cao trong công việc</p>
+          <button type="button">Đăng ký</button>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href=".site__hero-img" data-slide="prev">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <a class="carousel-control-next" href=".site__hero-img" data-slide="next">
+      <i class="fa fa-chevron-right"></i>
+    </a>
+  </section><!-- end Site Hero Img -->
+
+  <!-- Site Benefits -->
+  <section class="site__benefits section--pd">
+    <header class="section__header text-center">
+      <h1 class="title">Lý do các doanh nghiệp lựa chọn starhub</h1>
+      <hr>
+      <p class="description w-80 mx-auto">Một coworking space hiện đại, tiện nghi và là nơi duy nhất mở cửa 24/7 tại Việt Nam</p>
+    </header>
+    <div class="benefits__content container">
+      <div class="row">
+        <div class="benefits__video embed-responsive embed-responsive-16by9 col-xl-6 col-lg-6 col-12 wow animated fadeInLeft">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4j9nL_HgOds?rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="benefits__list col-xl-5 offset-xl-1 col-lg-6 col-12 wow animated fadeInRight">
+          <p class="title">Những giá trị mà StarHub mang lại cho các khách hàng của chúng tôi:</p>
+          <div><i class="far fa-check-circle"></i><p>Tạo cảm hứng tập trung hơn cho công việc.</p></div>
+          <div><i class="far fa-check-circle"></i><p>Xây dựng hình ảnh chuyên nghiệp trong mắt đối tác.</p></div>
+          <div><i class="far fa-check-circle"></i><p>Tiết kiệm thời gian quản lí và chi phí hoạt động giúp bạn tập trung vào giá trị cốt lõi, kinh doanh hiệu quả hơn.</p></div>
+          <div><i class="far fa-check-circle"></i><p>Kết nối cộng đồng doanh nghiệp trong và ngoài nước.</p></div>
+          <div><i class="far fa-check-circle"></i><p>Vị trí trung tâm.</p></div>
+          <div><i class="far fa-check-circle"></i><p>Tính linh hoạt: bạn chỉ phải trả những gì bạn sử dụng, trả phí theo giờ, ngày, tháng.</p></div>
+          <div><i class="far fa-check-circle"></i><p>Cơ hội đầu tư vào mở rộng quan hệ.</p></div>
+        </div>
+      </div>
+    </div>
+  </section><!-- end Site Benefits -->
+
+  <!-- Site Features -->
+  <section class="site__features section--pd section--dark">
+    <header class="section__header text-center">
+      <h1 class="title">Những tiện ích mà starhub mang lại cho bạn</h1>
+      <hr>
+      <p class="description w-80 mx-auto">Là thành viên của StarHub, bạn không chỉ được sử dụng 700m2 diện tích chung chỉ với chi phí từ 90.000 đồng, mà đi kèm với một loạt các tiện ích hấp dẫn khác.</p>
+    </header>
+    <div class="features__content wow animated fadeInLeft">
+      <div class="row">
+        <div class="col-3">
+          <div class="features__item">
+            <div class="features__icon">
+              <svg viewBox="0 0 90 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="noun_Monitor_54669" fill="#20BAA0" fill-rule="nonzero">
+                  <path d="M86.446,0.232 L3.555,0.232 C1.6,0.232 0.015,1.815 0.015,3.772 L0.015,54.657 L89.986,54.657 L89.986,3.772 C89.985,1.816 88.399,0.232 86.446,0.232 Z M86.003,50.526 L72.138,50.526 L54.145,4.214 L86.003,4.214 L86.003,50.526 Z" id="Shape"></path>
+                  <path d="M0.015,57.018 L0.015,61.884 C0.015,63.839 1.6,65.424 3.555,65.424 L34.724,65.424 C34.724,65.424 34.749,73.683 33.311,73.904 C31.873,74.125 29.771,74.458 29.771,74.753 C29.771,75.048 29.771,75.768 45,75.768 C60.229,75.768 60.229,75.048 60.229,74.753 C60.229,74.458 58.126,74.126 56.69,73.904 C55.251,73.682 55.276,65.424 55.276,65.424 L86.447,65.424 C88.4,65.424 89.986,63.839 89.986,61.884 L89.986,57.018 L0.015,57.018 Z M45,59.598 C45.897,59.598 46.622,60.325 46.622,61.221 C46.622,62.117 45.897,62.843 45,62.843 C44.104,62.843 43.377,62.117 43.377,61.221 C43.377,60.325 44.104,59.598 45,59.598 Z" id="Shape"></path>
+                </g>
+              </svg>
+            </div>
+            <p class="features__description">văn phòng <br> tiện ích</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="features__item">
+            <div class="features__icon">
+              <svg viewBox="0 0 100 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="noun_Community_5919" transform="translate(-192.000000, -46.000000)" fill="#20BAA0" fill-rule="nonzero">
+                  <g id="Group" transform="translate(192.000000, 46.000000)">
+                    <path d="M20.946,25.341 C27.373,25.341 32.584,18.579 32.584,12.152 C32.584,5.725 27.374,0.515 20.946,0.515 C14.52,0.515 9.309,5.725 9.309,12.152 C9.309,18.579 14.52,25.341 20.946,25.341 Z" id="Shape"></path>
+                    <path d="M78.889,25.341 C85.315,25.341 90.526,18.579 90.526,12.152 C90.526,5.725 85.315,0.515 78.889,0.515 C72.461,0.515 67.251,5.725 67.251,12.152 C67.251,18.579 72.461,25.341 78.889,25.341 Z" id="Shape"></path>
+                    <path d="M35.115,27.127 C35.115,18.907 41.78,12.243 50,12.243 C58.221,12.243 64.885,18.907 64.885,27.127 C64.885,35.348 58.221,43.997 50,43.997 C41.78,43.997 35.115,35.348 35.115,27.127 Z" id="Shape"></path>
+                    <path d="M84.441,27.12 C82.744,27.953 80.879,28.444 78.888,28.444 C76.847,28.444 74.935,27.932 73.202,27.06 C71.678,27.162 70.22,27.414 68.836,27.779 C68.645,33.14 66.119,38.763 62.104,42.709 C63.446,42.985 64.75,43.333 66,43.759 L66,41 C66,40.448 66.448,40 67,40 C67.552,40 68,40.448 68,41 L68,44.518 C72.588,46.454 76.346,49.403 78.768,53 L82.143,53 C84.137,53 86,52.751 88,52.311 L88,41 C88,40.448 88.448,40 89,40 C89.552,40 90,40.448 90,41 L90,51.711 C96,49.632 99.918,45.227 99.918,40.001 C99.918,33.299 93.123,27.937 84.441,27.12 Z" id="Shape"></path>
+                    <path d="M58.947,45.244 C56.317,46.941 53.286,47.966 50,47.966 C46.788,47.966 43.82,46.986 41.231,45.357 C30.942,46.968 23.208,53.86 23.208,62 C23.208,68.081 27.526,73.465 34,76.472 L34,64 C34,63.172 34.671,62.5 35.5,62.5 C36.329,62.5 37,63.172 37,64 L37,77.644 C39.715,78.516 42.701,79 45.837,79 L55.155,79 C57.913,79 60.555,78.625 63,77.941 L63,64 C63,63.172 63.672,62.5 64.5,62.5 C65.328,62.5 66,63.172 66,64 L66,76.908 C73.021,74.006 77.784,68.387 77.784,62 C77.784,53.647 69.639,46.611 58.947,45.244 Z" id="Shape"></path>
+                    <path d="M38.076,42.881 C33.967,38.937 31.369,33.248 31.163,27.819 C29.729,27.431 28.213,27.166 26.631,27.06 C24.899,27.932 22.986,28.444 20.945,28.444 C18.955,28.444 17.09,27.952 15.392,27.12 C6.711,27.937 0,33.299 0,40.001 C0,45.227 4.088,49.632 10,51.711 L10,41 C10,40.448 10.448,40 11,40 C11.552,40 12,40.448 12,41 L12,52.311 C13.788,52.751 15.698,53 17.692,53 L22.223,53 C24.469,49.665 27.86,46.885 32,44.955 L32,41 C32,40.448 32.448,40 33,40 C33.552,40 34,40.448 34,41 L34,44.116 C35.302,43.622 36.665,43.208 38.076,42.881 Z" id="Shape"></path>
+                  </g>
+                </g>
+            </svg>
+            </div>
+            <p class="features__description">cộng đồng <br> năng động</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="features__item">
+            <div class="features__icon">
+              <svg  viewBox="0 0 62 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="noun_Seminar_1858668" transform="translate(-2.000000, 0.000000)" fill="#20BAA0" fill-rule="nonzero">
+                    <g id="Group" transform="translate(2.000000, 0.000000)">
+                        <path d="M60.7,0.7 L1.3,0.7 C0.9,0.7 0.6,1 0.6,1.4 L0.6,62 C0.6,62.4 0.9,62.7 1.3,62.7 L12.5,62.7 C12.9,62.7 13.2,62.4 13.2,62 C13.2,61.3 13.9,45.4 4.7,36.1 C6.8,33.2 16.6,18.8 16.6,7.5 C19.7,8 23.3,7.5 24.9,4.7 C29.6,8.3 35.3,9.1 39.9,4.6 C41.4,6.2 43.5,7.9 45.7,7.6 C45.9,11.6 47.5,26.8 57.3,35.6 C55.4,39.5 46.6,57.9 48.6,62.7 C48.7,63 49,63.1 49.3,63.1 L60.7,63.1 C61.1,63.1 61.4,62.8 61.4,62.4 L61.4,1.4 C61.4,1.1 61.1,0.7 60.7,0.7 Z" id="Shape"></path>
+                        <path d="M28.3,25.3 C30.7,25.3 32.6,23.4 32.6,21 C32.6,18.6 30.7,16.7 28.3,16.7 C25.9,16.7 24,18.6 24,21 C24,23.4 25.9,25.3 28.3,25.3 Z" id="Shape"></path>
+                        <path d="M20.8,30.7 L20.8,32.2 L35.7,32.2 L35.7,30.7 C35.7,28.1 33.8,26 31.5,26 L25,26 C22.7,26.1 20.8,28.2 20.8,30.7 Z" id="Shape"></path>
+                        <path d="M37.6,24.6 C36.4,24.6 35.4,25.6 35.4,26.8 C35.4,28 36.4,29 37.6,29 C38,29 38.5,28.9 38.8,28.6 L39.3,29 C40,29.5 40.4,30.3 40.4,31.2 L40.4,32.3 L41.9,32.3 L41.9,31.2 C41.9,29.9 41.3,28.6 40.2,27.8 L39.7,27.4 C39.8,27.2 39.8,27 39.8,26.7 C39.8,25.6 38.8,24.6 37.6,24.6 Z" id="Shape"></path>
+                        <path d="M45.2,58.2 L16.8,58.2 C16.4,58.2 16.1,58.5 16.1,58.9 L16.1,62.4 C16.1,62.8 16.4,63.1 16.8,63.1 L45.3,63.1 C45.7,63.1 46,62.8 46,62.4 L46,59 C46,58.6 45.6,58.2 45.2,58.2 Z" id="Shape"></path>
+                        <path d="M46.4,33.7 L15.6,33.7 C15.2,33.7 14.9,34 14.9,34.4 L14.9,38.9 C14.9,39.3 15.2,39.6 15.6,39.6 L46.5,39.6 C46.9,39.6 47.2,39.3 47.2,38.9 L47.2,34.4 C47.2,34 46.8,33.7 46.4,33.7 Z" id="Shape"></path>
+                        <polygon id="Shape" points="45 41.1 17.1 41.1 17.6 56.8 44.4 56.8"></polygon>
+                    </g>
+                </g>    
+              </svg>
+            </div>
+            <p class="features__description">sự kiện <br> hấp dẫn</p>
+          </div>            
+        </div>
+        <div class="col-3">
+          <div class="features__item">
+            <div class="features__icon">
+              <svg viewBox="0 0 81 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="noun_Money_1851244" transform="translate(-7.000000, 0.000000)" fill="#20BAA0" fill-rule="nonzero">
+                      <g id="Group" transform="translate(7.000000, 0.000000)">
+                          <path d="M42.101,19.194 L42.1,15.336 C42.562,15.585 42.893,15.832 43.094,16.076 C43.293,16.32 43.518,16.759 43.767,17.389 L48.728,16.601 C48.408,15.179 47.721,14.06 46.667,13.242 C45.613,12.426 44.091,11.953 42.1,11.83 L42.1,10.51 L40.153,10.51 L40.153,11.83 C37.966,11.945 36.32,12.535 35.213,13.598 C34.107,14.661 33.553,15.985 33.554,17.569 C33.554,18.725 33.829,19.706 34.381,20.51 C34.932,21.315 35.583,21.901 36.334,22.265 C37.085,22.63 38.358,23.061 40.154,23.559 L40.155,28.272 C39.532,27.969 39.086,27.623 38.814,27.232 C38.543,26.84 38.328,26.205 38.168,25.325 L32.781,25.952 C32.941,26.842 33.181,27.599 33.501,28.225 C33.821,28.853 34.276,29.437 34.868,29.979 C35.459,30.522 36.161,30.946 36.974,31.252 C37.788,31.559 38.848,31.77 40.155,31.885 L40.155,34.406 L42.102,34.406 L42.102,31.885 C43.196,31.84 44.12,31.696 44.875,31.451 C45.63,31.206 46.344,30.811 47.015,30.269 C47.687,29.726 48.238,29.05 48.668,28.24 C49.1,27.431 49.315,26.541 49.314,25.572 C49.314,23.918 48.714,22.551 47.514,21.475 C46.607,20.676 44.803,19.915 42.101,19.194 Z M40.153,18.7 C39.59,18.505 39.196,18.261 38.97,17.971 C38.745,17.68 38.632,17.338 38.632,16.946 C38.632,16.57 38.743,16.245 38.965,15.967 C39.188,15.69 39.583,15.457 40.153,15.27 L40.153,18.7 Z M43.761,27.569 C43.409,27.957 42.857,28.236 42.101,28.405 L42.101,24.126 C42.965,24.429 43.545,24.756 43.842,25.107 C44.14,25.46 44.288,25.844 44.288,26.264 C44.288,26.746 44.112,27.18 43.761,27.569 Z" id="Shape"></path>
+                          <path d="M78.269,0.4 L2.731,0.4 C1.627,0.4 0.731,1.296 0.731,2.4 L0.731,42.6 C0.731,43.704 1.627,44.6 2.731,44.6 L78.268,44.6 C79.372,44.6 80.268,43.704 80.268,42.6 L80.268,2.4 C80.269,1.295 79.373,0.4 78.269,0.4 Z M15.256,41.75 L3.84,41.75 L3.84,31.167 L5.84,31.167 L5.84,39.751 L15.256,39.751 L15.256,41.75 Z M15.256,5.25 L5.84,5.25 L5.84,13.834 L3.84,13.834 L3.84,3.25 L15.256,3.25 L15.256,5.25 Z M41.047,38.241 C32.33,38.241 25.264,31.175 25.264,22.458 C25.264,13.741 32.33,6.675 41.047,6.675 C49.765,6.675 56.831,13.741 56.831,22.458 C56.831,31.175 49.765,38.241 41.047,38.241 Z M77.173,41.75 L65.756,41.75 L65.756,39.75 L75.173,39.75 L75.173,31.166 L77.173,31.166 L77.173,41.75 Z M77.173,13.834 L75.173,13.834 L75.173,5.25 L65.756,5.25 L65.756,3.25 L77.173,3.25 L77.173,13.834 Z" id="Shape"></path>
+                      </g>
+                  </g>
+              </svg>
+            </div>
+            <p class="features__description">ưu đãi <br> từ đối tác</p>
+          </div> 
+        </div>
+        <div class="col-3">
+          <div class="features__item">
+            <div class="features__icon">
+              <svg  viewBox="0 0 64 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="noun_secretary_985788" transform="translate(-18.000000, -1.000000)" fill="#20BAA0" fill-rule="nonzero">
+                    <g id="Group" transform="translate(18.000000, 0.637820)">
+                        <path d="M32.2811,0.36232 C18.5557,0.42232 8.19211,9.35272 7.0936,21.20612 C7.062,34.76292 6.99008,48.8013 7,60.8311 C5.14217,61.3806 3.61318,62.4073 2.5,63.7061 C0.83156,65.6526 3.55271368e-15,68.1123 3.55271368e-15,70.3623 C3.55271368e-15,73.6379 0.10914,76.2743 0.8125,78.4873 C1.51586,80.7003 2.89548,82.4477 5.15625,83.6123 C9.67778,85.9416 17.47701,86.3623 32,86.3623 C46.52299,86.3623 54.32222,85.9416 58.84375,83.6123 C61.10452,82.4477 62.48414,80.7003 63.1875,78.4873 C63.89086,76.2743 64,73.6379 64,70.3623 C64,68.1123 63.16844,65.6526 61.5,63.7061 C60.38682,62.4073 58.85783,61.3806 57,60.8311 C57.0278,47.1644 56.9245,33.59762 56.9376,22.33112 C55.99222,9.85092 46.42882,0.30042 32.28135,0.36232 L32.2811,0.36232 Z M44.8748,19.64352 L45.9998,20.76852 L45.9998,31.36232 C45.99985,31.88592 46.47622,32.36222 46.9998,32.36232 L47.9998,32.36232 L47.9998,36.36232 C47.44338,36.91882 46.73783,37.15122 45.99985,37.36182 C45.53325,37.35182 45.08732,37.71592 44.99985,38.17432 C44.57687,40.71222 41.97519,44.1917 39.06235,46.8618 C36.84992,48.8119 34.77138,50.4504 31.99985,51.3618 C29.42345,50.7351 27.21783,48.9243 25.43735,47.2368 C22.78953,44.7093 20.99985,41.3495 19.99985,38.20562 C19.92555,37.73602 19.47524,37.35602 18.99985,37.36182 C17.84043,37.13112 16.83346,36.70652 15.9999,36.20532 L15.9999,32.36152 L17.9999,32.36152 C18.52348,32.36142 18.99985,31.88512 18.9999,31.36152 L18.9999,25.54902 C27.99985,29.34952 37.99985,26.34952 44.8748,19.64352 Z M36.9998,51.1123 L36.9998,54.3623 C37.0008,54.5493 37.0557,54.7357 37.15605,54.8935 L38.6873,57.2061 L31.9998,65.7373 L25.3123,57.2061 L26.84355,54.8935 C26.94393,54.7357 26.99875,54.5493 26.9998,54.3623 L26.9998,51.1435 C28.50085,52.1207 30.34415,53.3333 31.9998,53.3623 C34.09399,53.0531 35.44397,52.1387 36.9998,51.1123 Z M21.09355,55.0811 L31.21855,67.9561 C31.59174,68.423 32.40786,68.423 32.78105,67.9561 L42.90605,55.0811 C44.0875,57.4922 44.76489,58.9704 47.09355,59.8311 L48.21855,64.3623 L40.9998,64.3623 C40.73575,64.3523 40.47084,64.4593 40.28105,64.6435 L31.9998,72.9248 L23.71855,64.6435 C23.52876,64.4598 23.26385,64.3562 22.9998,64.3623 L15.78105,64.3623 L16.90605,59.8311 C19.34947,59.2595 19.86416,57.1471 21.09355,55.0811 Z M14.6248,60.6748 L13.53105,65.1123 C13.37913,65.701 13.89183,66.3625 14.4998,66.3623 L22.59355,66.3623 L30.9998,74.7685 L30.9998,84.3623 C22.41047,84.3443 16.27191,84.0935 11.9998,83.4561 L11.9998,75.3623 L9.9998,75.3623 L9.9998,83.1123 C8.39242,82.7736 7.08563,82.3421 6.09355,81.8311 C4.22932,80.8707 3.29644,79.6805 2.71855,77.8623 C2.14066,76.0441 1.9998,73.5867 1.9998,70.3623 C1.9998,68.6123 2.66824,66.5408 3.9998,64.9873 C7.59216,62.4546 10.33986,62.3012 14.6248,60.6748 Z M49.3748,60.6748 C52.71751,62.5274 57.67909,62.3593 59.9998,64.9868 C61.33136,66.5403 61.9998,68.6119 61.9998,70.3618 C61.9998,73.5862 61.85894,76.0436 61.28105,77.8618 C60.70316,79.68 59.77028,80.8702 57.90605,81.8306 C56.91397,82.3416 55.60718,82.7731 53.9998,83.1118 L53.9998,75.3618 L51.9998,75.3618 L51.9998,83.4556 C47.72769,84.093 41.58913,84.3435 32.9998,84.3618 L32.9998,74.768 L41.40605,66.3618 L49.4998,66.3618 C50.10777,66.362 50.62047,65.7005 50.46855,65.1118 L49.3748,60.6748 Z" id="Shape"></path>
+                    </g>
+                </g>
+              </svg>
+            </div>
+            <p class="features__description">lễ tân</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="features__item">
+            <div class="features__icon">
+              <svg viewBox="0 0 112 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="noun_Printer_710206" transform="translate(-4.000000, 0.000000)" fill="#20BAA0"" fill-rule="nonzero">
+                    <path d="M115.679,24.567 L98.268,24.567 L98.268,0.288 L21.446,0.288 L21.446,24.567 L4.321,24.567 L4.321,71.928 L21.446,71.928 L21.446,93.711 L98.267,93.711 L98.267,71.929 L115.678,71.929 L115.678,24.567 L115.679,24.567 Z M29.446,8.288 L90.267,8.288 L90.267,24.567 L29.446,24.567 L29.446,8.288 Z M29.446,85.712 L29.446,46.277 L90.267,46.277 L90.267,85.712 L29.446,85.712 Z M82.107,63.413 L37.607,63.413 L37.607,55.413 L82.107,55.413 L82.107,63.413 Z M82.107,76.253 L37.607,76.253 L37.607,68.253 L82.107,68.253 L82.107,76.253 Z" id="Shape"></path>
+                </g>
+              </svg>
+            </div>
+            <p class="features__description">photocopy <br> máy in</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="features__item">
+            <div class="features__icon">
+              <svg viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="noun_wifi_334327" fill="#20BAA0" fill-rule="nonzero">
+                    <path d="M3.75,0 C2.37,0 1.09,0.4 0,1.09 L0.53,1.9 C1.46,1.31 2.56,0.99 3.75,0.99 C4.95,0.99 6.07,1.3 7,1.9 L7.53,1.09 C6.44,0.39 5.13,0 3.75,0 Z M3.75,3 C2.96,3 2.25,3.23 1.62,3.63 L2.15,4.47 C2.62,4.17 3.15,4 3.74,4 C4.33,4 4.9,4.17 5.37,4.47 L5.9,3.63 C5.28,3.24 4.53,3 3.74,3 L3.75,3 Z M3.75,6 C3.2,6 2.75,6.45 2.75,7 C2.75,7.55 3.2,8 3.75,8 C4.3,8 4.75,7.55 4.75,7 C4.75,6.45 4.3,6 3.75,6 Z" id="Shape"></path>
+                </g>
+              </svg>
+            </div>
+            <p class="features__description">internet <br> tốc độ cao</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="features__item">
+            <div class="features__icon">
+              <svg  viewBox="0 0 90 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="noun_Library_1554694" transform="translate(-5.000000, -1.000000)" fill="#20BAA0" fill-rule="nonzero">
+                    <path d="M39.118,4.5 L26.882,4.5 C25.847,4.5 25,5.36 25,6.412 L25,67.588 C25,68.64 25.847,69.5 26.882,69.5 L39.117,69.5 C40.152,69.5 40.999,68.64 40.999,67.588 L40.999,6.412 C41,5.36 40.153,4.5 39.118,4.5 Z M38.176,18.5 L27.824,18.5 L27.824,16.5 L38.177,16.5 L38.177,18.5 L38.176,18.5 Z M38.176,13.5 L27.824,13.5 L27.824,11.5 L38.177,11.5 L38.177,13.5 L38.176,13.5 Z M75.928,64.352 C76.212,65.414 75.628,66.503 74.633,66.771 L62.876,69.94 C61.881,70.208 60.835,69.557 60.552,68.494 L44.072,6.648 C43.788,5.585 44.371,4.496 45.365,4.228 L57.123,1.06 C58.117,0.791 59.164,1.442 59.447,2.505 L75.928,64.352 Z M79,64.5 L95,64.5 L95,67.5 C95,68.6 94.152,69.5 93.116,69.5 L80.884,69.5 C79.848,69.5 79,68.6 79,67.5 L79,64.5 Z M79,8.5 L95,8.5 L95,62.5 L79,62.5 L79,8.5 Z M95,3.5 L95,6.5 L79,6.5 L79,3.5 C79,2.4 79.848,1.5 80.884,1.5 L93.116,1.5 C94.152,1.5 95,2.4 95,3.5 Z M5,13.5 L21,13.5 L21,57.333 L5,57.333 L5,13.5 Z M5,61.333 L21,61.333 L21,67.5 C21,68.6 20.153,69.5 19.118,69.5 L6.882,69.5 C5.847,69.5 5,68.6 5,67.5 L5,61.333 Z M21,3.5 L21,9.5 L5,9.5 L5,3.5 C5,2.4 5.847,1.5 6.882,1.5 L19.117,1.5 C20.153,1.5 21,2.4 21,3.5 Z" id="Shape"></path>
+                </g>
+                </svg>
+            </div>
+            <p class="features__description">thư viện</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="features__item">
+            <div class="features__icon">
+              <svg viewBox="0 0 84 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="noun_Coffee_936134" transform="translate(-8.000000, 0.000000)" fill="#20BAA0" fill-rule="nonzero">
+                    <g id="Group" transform="translate(8.000000, 0.000000)">
+                        <path d="M43.597,0.885 C43.597,15.254 27.632,15.254 37.211,28.026 C37.21,15.254 53.176,15.254 43.597,0.885 Z" id="Shape"></path>
+                        <path d="M59.562,0.885 C59.562,15.254 43.597,15.254 53.176,28.026 C53.176,15.254 69.141,15.254 59.562,0.885 Z" id="Shape"></path>
+                        <path d="M75.527,72.729 L38.807,72.729 L2.087,72.729 C0.49,72.729 0.49,72.729 0.49,74.326 C0.49,77.519 6.876,79.116 11.666,79.116 L38.807,79.116 L65.948,79.116 C70.738,79.116 77.124,77.519 77.124,74.326 C77.124,72.729 77.124,72.729 75.527,72.729 Z" id="Shape"></path>
+                        <path d="M67.483,38.158 C67.524,36.931 67.545,35.681 67.545,34.412 L10.069,34.412 C10.069,50.377 13.262,63.15 21.245,69.536 L56.369,69.536 C57.534,68.604 58.595,67.536 59.561,66.342 L59.562,66.343 C67.545,56.764 83.51,61.553 83.51,47.185 C83.51,37.259 73.608,34.953 67.483,38.158 Z M64.935,55.616 C65.802,52.739 66.437,49.585 66.864,46.197 C69.533,40.996 77.124,41.921 77.124,47.184 C77.124,53.081 71.075,53.534 64.935,55.616 Z" id="Shape"></path>
+                        <path d="M27.631,0.885 C27.631,15.254 11.666,15.254 21.245,28.026 C21.245,15.254 37.21,15.254 27.631,0.885 Z" id="Shape"></path>
+                    </g>
+                </g>
+              </svg>
+            </div>
+            <p class="features__description">coffee <br> fastfood</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="features__item">
+            <div class="features__icon">
+              <svg viewBox="0 0 88 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="noun_Kitchen_1092638" transform="translate(-6.000000, 0.000000)" fill="#20BAA0" fill-rule="nonzero">
+                    <g id="Group" transform="translate(6.000000, 0.000000)">
+                        <path d="M26.6,37.5 L35.3,51 L41.4,44 L32.3,33.3 C36.2,27.6 35.2,18.2 29.4,10.5 C22.6,1.4 11.7,-2.1 5.1,2.8 C-1.5,7.7 -1.3,19.1 5.5,28.2 C11.4,36 20.1,39.6 26.6,37.5 Z" id="Shape"></path>
+                        <path d="M52.5,57.1 L45.9,67.4 L61.9,92.1 C64.2,95.7 69.1,96.6 72.6,94 L73.2,93.5 C76.6,90.9 77.2,86 74.4,82.7 L52.5,57.1 Z" id="Shape"></path>
+                        <path d="M87.1,11.2 C86.2,10.1 84.5,10.2 83.7,11.3 C83.7,11.3 72.3,25.9 69.1,30 C68.6,30.6 67.7,30.7 67.1,30.3 C67.1,30.3 67.1,30.3 67.1,30.3 C66.5,29.8 66.3,29 66.8,28.3 L80.5,9 C81.1,8.2 81.1,7 80.4,6.2 C79.5,5.1 77.8,5.2 77,6.3 C77,6.3 65.6,20.9 62.4,25 C61.9,25.6 61,25.7 60.4,25.3 C59.8,24.8 59.6,24 60.1,23.3 C63.2,19 73.9,3.9 73.9,3.9 C74.7,2.8 74.3,1.2 73,0.6 C72.1,0.2 71,0.5 70.3,1.3 L54.9,21.1 C54.9,21.1 54.9,21.1 54.9,21.1 L52.9,23.7 C50.9,26.4 50,29.6 50.4,32.4 L51.3,38.2 L13,82.6 C10.2,85.9 10.8,90.8 14.2,93.4 L14.8,93.9 C18.2,96.5 23.1,95.6 25.5,92 L57.1,42.7 L63,41.9 C65.8,41.5 68.6,39.7 70.7,37 L72.7,34.4 L87.2,14 C87.8,13.2 87.8,12 87.1,11.2 Z" id="Shape"></path>
+                    </g>
+                </g>
+              </svg>
+            </div>
+            <p class="features__description">khu bếp<br> nghỉ trưa</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="features__item">
+            <div class="features__icon"> 
+              <svg viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="noun_Gym_835271" transform="translate(-5.000000, 0.000000)" fill="#20BAA0" fill-rule="nonzero">
+                    <g id="Group" transform="translate(5.000000, 0.000000)">
+                        <path d="M8.29,64.233 C8.394,64.326 8.511,64.397 8.611,64.498 L26.281,82.17 C26.379,82.268 26.449,82.382 26.54,82.484 L29.388,85.332 C31.383,87.327 34.487,87.471 36.306,85.653 C38.125,83.833 37.981,80.73 35.986,78.735 L12.045,54.794 C10.987,53.736 9.615,53.198 8.291,53.198 C7.119,53.198 5.981,53.62 5.127,54.473 C3.308,56.292 3.453,59.395 5.449,61.391 L8.29,64.233 Z" id="Shape"></path>
+                        <path d="M19.489,88.962 C20.774,90.246 22.759,90.354 23.913,89.198 C25.067,88.044 24.96,86.06 23.675,84.775 L23.675,84.774 L6.005,67.103 C5.317,66.416 4.43,66.066 3.575,66.066 C2.834,66.066 2.117,66.331 1.581,66.867 C1.039,67.409 0.754,68.156 0.782,68.967 C0.811,69.826 1.179,70.652 1.817,71.29 L19.489,88.962 Z" id="Shape"></path>
+                        <rect id="Rectangle-path" transform="translate(45.000338, 44.218755) rotate(45.000000) translate(-45.000338, -44.218755) " x="19.0100873" y="37.2613216" width="51.9805015" height="13.9148666"></rect>
+                        <path d="M36.307,4.347 C35.453,3.493 34.315,3.072 33.143,3.072 C31.817,3.072 30.447,3.61 29.389,4.668 L26.543,7.514 C26.451,7.617 26.38,7.732 26.281,7.832 L8.611,25.502 C8.509,25.604 8.39,25.679 8.283,25.774 L5.448,28.609 C3.453,30.605 3.308,33.708 5.126,35.527 C6.947,37.347 10.051,37.2 12.044,35.206 L35.985,11.265 C37.982,9.269 38.126,6.166 36.307,4.347 Z" id="Shape"></path>
+                        <rect id="Rectangle-path" transform="translate(32.438035, 58.340784) rotate(45.000000) translate(-32.438035, -58.340784) " x="25.4811019" y="50.1153633" width="13.9138666" height="16.4508422"></rect>
+                        <path d="M84.873,37.087 C86.691,35.269 86.547,32.165 84.551,30.169 L81.719,27.337 C81.611,27.241 81.491,27.165 81.388,27.062 L81.388,27.061 L63.717,9.391 C63.617,9.291 63.546,9.175 63.453,9.071 L60.611,6.229 C59.553,5.171 58.181,4.633 56.857,4.633 C55.685,4.633 54.547,5.055 53.693,5.908 C51.874,7.727 52.018,10.83 54.013,12.826 L77.954,36.767 C79.95,38.762 83.055,38.906 84.873,37.087 Z" id="Shape"></path>
+                        <rect id="Rectangle-path" transform="translate(58.341118, 32.438145) rotate(45.000000) translate(-58.341118, -32.438145) " x="51.3836851" y="25.3157134" width="13.9148666" height="14.2448634"></rect>
+                        <path d="M23.675,5.224 C24.96,3.94 25.067,1.955 23.913,0.801 C23.375,0.265 22.66,0 21.917,0 C21.064,0 20.176,0.35 19.489,1.037 L1.818,18.708 C1.18,19.347 0.811,20.172 0.783,21.031 C0.755,21.843 1.04,22.589 1.582,23.131 C2.124,23.675 2.899,23.961 3.682,23.93 C4.542,23.901 5.367,23.533 6.006,22.894 L23.675,5.224 Z" id="Shape"></path>
+                        <path d="M66.324,83.215 C65.04,84.5 64.933,86.485 66.088,87.639 C67.242,88.794 69.228,88.686 70.512,87.402 L88.183,69.732 C88.821,69.093 89.19,68.268 89.218,67.409 C89.246,66.597 88.961,65.851 88.419,65.309 C87.265,64.153 85.279,64.262 83.995,65.545 L66.324,83.215 Z" id="Shape"></path>
+                        <path d="M83.995,24.455 C84.635,25.094 85.459,25.462 86.319,25.49 C87.102,25.52 87.876,25.234 88.419,24.692 C88.962,24.15 89.246,23.403 89.218,22.591 C89.189,21.732 88.821,20.907 88.183,20.268 L70.511,2.598 C69.227,1.313 67.241,1.206 66.087,2.362 C64.933,3.516 65.04,5.5 66.323,6.785 L83.995,24.455 Z" id="Shape"></path>
+                        <path d="M53.693,84.093 C55.512,85.911 58.616,85.767 60.611,83.772 L63.453,80.93 C63.546,80.826 63.617,80.71 63.717,80.61 L81.388,62.938 C81.488,62.838 81.605,62.766 81.71,62.673 L84.551,59.832 C86.546,57.836 86.691,54.733 84.873,52.914 C83.055,51.097 79.95,51.238 77.955,53.234 L54.014,77.175 C52.018,79.17 51.874,82.273 53.693,84.093 Z" id="Shape"></path>
+                    </g>
+                </g>
+              </svg>
+            </div>
+            <p class="features__description">phòng gym</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="features__item">
+            <div class="features__icon">
+              <svg  viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="noun_Cigarette_777801" transform="translate(-10.000000, 0.000000)" fill="#20BAA0" fill-rule="nonzero">
+                  <g id="Group" transform="translate(10.000000, 0.000000)">
+                      <rect id="Rectangle-path" x="0" y="60" width="60" height="20"></rect>
+                      <rect id="Rectangle-path" x="70" y="60" width="10" height="20"></rect>
+                      <path d="M40,10 C34.5,10 30,5.5 30,0 L20,0 C20,11 29,20 40,20 C56.6,20 70,33.4 70,50 L80,50 C80,27.9 62.1,10 40,10 Z" id="Shape"></path>
+                      <path d="M40,40 C45.5,40 50,44.5 50,50 L60,50 C60,39 51,30 40,30 C23.4,30 10,16.6 10,0 L0,0 C0,22.1 17.9,40 40,40 Z" id="Shape"></path>
+                  </g>
+                </g>
+              </svg>            
+            </div>
+            <p class="features__description">khu vực <br> hút thuốc</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- end Site Features -->
+
+  <!-- Site Services -->
+  <section class="site__services section--pd">
+    <header class="section__header text-center">
+      <h1 class="title">Các dịch vụ của StarHub</h1>
+      <hr>
+      <p class="description w-80 mx-auto">Ở StarHub, các dịch vụ được thiết kế dành riêng cho từng đối tượng khách hàng với giá cả hợp lý nhằm mục tiêu hỗ trợ tối đa cho các doanh nghiệp.</p>
+    </header>
+    <div class="services__content">
+      <div class="row justify-content-around">
+        <div class="col-12 col-xl-3 col-md-5 col services__item wow animated fadeInLeft">
+          <h1 class="services__name">Gói <span>thành viên</span></h1>
+          <p class="services__price"><strong>300.000</strong>&nbsp;&nbsp;VNĐ trở lên</p>
+          <p class="services__unit">/ 1 người / 1 tuần</p>
+          <ol class="list-unstyled services__detail">
+            <li><i class="fas fa-check"></i><span>1-6 người</span></li>
+            <li><i class="fas fa-check"></i><span>Cá nhân</span></li>
+            <li><i class="fas fa-check"></i><span>Nhóm làm việc</span></li>
+            <li><i class="fas fa-check"></i><span>Công ty thích không gian mở, ngồi tự do làm việc</span></li>
+            <li><i class="fas fa-gift"></i><span>20 tiện ích miễn phí</span></li>
+            <li><i class="fas fa-gift"></i><span>700m2 diện tích sử dụng chung</span></li>
+          </ol>
+          <button type="button" class="services__button d-block mx-auto">Tìm hiểu thêm</button>
+        </div>
+        <div class="col-12 col-xl-3 col-md-5 col services__item wow animated fadeInUp">
+          <span class="services__sale">Hot</span>
+          <h1 class="services__name">Gói <span>văn phòng</span></h1>
+          <p class="services__price"><strong>4.000.000</strong>&nbsp;&nbsp;VNĐ trở lên</p>
+          <p class="services__unit">/ 1 nhóm / 1 tháng</p>
+          <ol class="list-unstyled services__detail">
+            <li><i class="fas fa-check"></i><span>7-15 người</span></li>
+            <li><i class="fas fa-check"></i><span>Nhóm làm việc riêng</span></li>
+            <li><i class="fas fa-check"></i><span>Công ty cần không gian riêng</span></li>
+            <li><i class="fas fa-gift"></i><span>Văn phòng cùng biển tên riêng</span></li>
+            <li><i class="fas fa-gift"></i><span>20 tiện ích miễn phí</span></li>
+            <li><i class="fas fa-gift"></i><span>700m2 diện tích sử dụng chung</span></li>
+          </ol>
+          <button type="button" class="services__button d-block mx-auto">Tìm hiểu thêm</button>
+        </div>
+        <div class="col-12 col-xl-3 col-md-5 col services__item wow animated fadeInRight">
+          <h1 class="services__name">Gói <span>hội thảo</span></h1>
+          <p class="services__price"><strong>500.000</strong>&nbsp;&nbsp;VNĐ trở lên</p>
+          <p class="services__unit">/ 1 nhóm / 1 giờ</p>
+          <ol class="list-unstyled services__detail">
+            <li><i class="fas fa-check"></i><span>60-120 người</span></li>
+            <li><i class="fas fa-check"></i><span>Tổ chức hội thảo, sự kiện, thảo luận các đề tài</span></li>
+            <li><i class="fas fa-gift"></i><span>Phòng họp cỡ lớn, sang trọng, đầy đủ tiện nghi, trang thiết bị hiện đại. </span></li>
+            <li><i class="fas fa-gift"></i><span>20 tiện ích miễn phí</span></li>
+            <li><i class="fas fa-gift"></i><span>700m2 diện tích sử dụng chung</span></li>
+          </ol>
+          <button type="button" class="services__button d-block mx-auto">Tìm hiểu thêm</button>
+        </div>
+      </div>
+    </div>
+    </header>
+  </section><!-- end Site Services -->
+
+  <!-- Site Gallery -->
+  <section class="site__gallery section--pd section--dark">
+    <header class="section__header text-center">
+      <h1 class="title">Trải nghiệm không gian starhub</h1>
+      <hr>
+      <p class="description w-80 mx-auto">Cùng nhau ngắm nhìn những bức hình được đội ngũ nhân viên và cộng đồng StarHub chia sẻ.</p>
+    </header>    
+    <div class="gallery__content wow animated fadeInUp">
+      <nav class="gallery__nav nav">
+        <button class="gallery__btn col-12 col-sm-auto" data-filter="*">Tất cả</button>
+        <button class="gallery__btn col-12 col-sm-auto" data-filter=".img__general">phòng sinh hoạt chung</button>
+        <button class="gallery__btn col-12 col-sm-auto" data-filter=".img__private">văn phòng riêng</button>
+        <button class="gallery__btn col-12 col-sm-auto" data-filter=".img__seminar">phòng hội thảo</button>
+        <button class="gallery__btn col-12 col-sm-auto" data-filter=".img__cafeteria">cafeteria</button>
+        <button class="gallery__btn col-12 col-sm-auto" data-filter=".img__event">sự kiện</button>
+      </nav>
+      <div class="gallery__img">
+        <div class="row">
+          <div class="col-3 img__general">
+            <a href="../img/homepage/General Room-1.jpg" data-lightbox="all"><img src="../img/homepage/General Room-1.jpg" alt="general room" class="img-fluid"></a>
+          </div>
+          <div class="col-3 img__general">
+            <a href="../img/homepage/General Room-2.jpg" data-lightbox="all"><img src="../img/homepage/General Room-2.jpg" alt="general room" class="img-fluid"></a>
+          </div>
+          <div class="col-3 img__general">
+              <a href="../img/homepage/General Room-3.jpg" data-lightbox="all"><img src="../img/homepage/General Room-3.jpg" alt="general room" class="img-fluid"></a>
+          </div>
+          <div class="col-3 img__general">
+              <a href="../img/homepage/General Room-4.jpg" data-lightbox="all"><img src="../img/homepage/General Room-4.jpg" alt="general room" class="img-fluid"></a>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-3 img__cafeteria">
+              <a href="../img/homepage/Cafeteria-1.jpg" data-lightbox="all"><img src="../img/homepage/Cafeteria-1.jpg" alt="cafeteria" class="img-fluid"></a>
+          </div>
+          <div class="col-3 img__cafeteria">
+              <a href="../img/homepage/Cafeteria-2.jpg" data-lightbox="all"><img src="../img/homepage/Cafeteria-2.jpg" alt="cafeteria" class="img-fluid"></a>
+          </div>
+          <div class="col-3 img__event">
+            <a href="../img/homepage/Event-1.jpg" data-lightbox="all"><img src="../img/homepage/Event-1.jpg" alt="event" class="img-fluid"></a>
+          </div>
+          <div class="col-3 img__event">
+              <a href="../img/homepage/Event-2.jpg" data-lightbox="all"><img src="../img/homepage/Event-2.jpg" alt="event" class="img-fluid"></a>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-3 img__event">
+            <a href="../img/homepage/Event-3.jpg" data-lightbox="all"><img src="../img/homepage/Event-3.jpg" alt="event" class="img-fluid"></a>
+          </div>
+          <div class="col-3 img__private">
+              <a href="../img/homepage/Private Room-1.jpg" data-lightbox="all"><img src="../img/homepage/Private Room-1.jpg" alt="private room" class="img-fluid"></a>
+          </div>
+          <div class="col-3 img__private">
+              <a href="../img/homepage/Private Room-2.jpg" data-lightbox="all"><img src="../img/homepage/Private Room-2.jpg" alt="private room" class="img-fluid"></a>
+          </div>
+          <div class="col-3 img__private">
+              <a href="../img/homepage/Private Room-3.jpg" data-lightbox="all"><img src="../img/homepage/Private Room-3.jpg" alt="private room" class="img-fluid"></a>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-3 img__private">
+            <a href="../img/homepage/Private Room-4.jpg" data-lightbox="all"><img src="../img/homepage/Private Room-4.jpg" alt="private room" class="img-fluid"></a>
+          </div>
+          <div class="col-3 img__seminar">
+            <a href="../img/homepage/Seminar Room-1.jpg" data-lightbox="all"><img src="../img/homepage/Seminar Room-1.jpg" alt="seminar room" class="img-fluid"></a>
+          </div>
+          <div class="col-3 img__seminar">
+            <a href="../img/homepage/Seminar Room-2.jpg" data-lightbox="all"><img src="../img/homepage/Seminar Room-2.jpg" alt="seminar room" class="img-fluid"></a>
+          </div>
+          <div class="col-3 img__seminar">
+              <a href="../img/homepage/Seminar Room-3.jpg" data-lightbox="all"><img src="../img/homepage/Seminar Room-3.jpg" alt="seminar room" class="img-fluid"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- end Site Gallery -->
+  
+  <!-- Site Testimonials -->
+  <section class="site__testimonials">
+    <header class="section__header text-center">
+      <h1 class="title">Khách hàng nói về starhub</h1>
+      <hr>
+      <p class="description w-80 mx-auto">Cùng lắng nghe những chia sẻ và cảm xúc của khách hàng khi sử dụng dịch vụ của StarHub.</p>
+    </header>
+    <div class="ttmn__content owl-carousel owl-theme wow animated fadeInRight">
+      <div class="ttmn__item">
+        <span class="fas fa-quote-left"></span>
+        <p class="ttmn__quote">StarHub đã thành công trong việc mang lại một không gian làm việc năng động và hợp tác, truyền cảm hứng cho bản thân tôi và các star-up để đưa ra những ý tưởng sáng tạo và có giá trị. Một mô hình cần học hỏi và nhân rộng.</p>
+        <span class="fas fa-quote-right"></span>
+        <div class="ttmn__avt"><img src="../img/homepage/person-avt-1.jpg" alt="" class="img-fluid"></div>
+        <h3 class="ttmn__name">Nguyễn Duy Anh</h3>
+        <p class="ttmn__job">Giám đốc sáng tạo ứng dụng Zalo</p>
+      </div>
+      <div class="ttmn__item">
+        <span class="fas fa-quote-left"></span>
+        <p class="ttmn__quote">Mình thích không khí làm việc hừng hực tại đây. Mọi người đều rất tập trung vào công việc của mình và không quá quan tâm đến người khác. Tại StarHub bạn luôn có một không gian riêng nhưng không hề có cảm giác làm việc một mình.</p>
+        <span class="fas fa-quote-right"></span>
+        <div class="ttmn__avt"><img src="../img/homepage/person-avt-4.jpg" alt=""></div>
+        <h3 class="ttmn__name">Yến Vũ</h3>
+        <p class="ttmn__job">Trưởng phòng Marketing Zalora Việt Nam</p>
+      </div>
+      <div class="ttmn__item">
+        <span class="fas fa-quote-left"></span>
+        <p class="ttmn__quote">Lần đầu tiên trải nghiệm mô hình Coworking tại Starhub. Mặc dù mới mẻ nhưng setup rất ok, dịch vụ tốt, vị trí trung tâm, thuận tiện đi lại. Và đặc biệt giá cả rất phải chăng. Hi vọng sẽ có nhiều cơ hội để được trải nghiệm thêm trong thời gian sắp tới.</p>
+        <span class="fas fa-quote-right"></span>
+        <div class="ttmn__avt"><img src="../img/homepage/person-avt-3.jpg" alt=""></div>
+        <h3 class="ttmn__name">David Hà</h3>
+        <p class="ttmn__job">Giám đốc điều hành Zasco</p>
+      </div>
+      <div class="ttmn__item">
+        <span class="fas fa-quote-left"></span>
+        <p class="ttmn__quote">StarHub đã thành công trong việc mang lại một không gian làm việc năng động và hợp tác, truyền cảm hứng cho bản thân tôi và các star-up để đưa ra những ý tưởng sáng tạo và có giá trị. Một mô hình cần học hỏi và nhân rộng.</p>
+        <span class="fas fa-quote-right"></span>
+        <div class="ttmn__avt"><img src="../img/homepage/person-avt-2.jpg" alt=""></div>
+        <h3 class="ttmn__name">Trần Anh Tuấn</h3>
+        <p class="ttmn__job">Giám đốc phụ trách Google tại Việt Nam</p>
+      </div>
+    </div>    
+  </section><!-- end Testimonials -->
+
+  <!-- Site News -->
+  <section class="site__news section--pd section--dark">
+    <header class="section__header text-center">
+      <h1 class="title">Tin tức, sự kiện</h1>
+      <hr>
+      <p class="description w-80 mx-auto">Cùng theo dõi những tin tức mới nhất xoay quanh cộng đồng khởi nghiệp ở StarHub, cũng như các sự kiện quan trọng sắp được tổ chức tại đây</p>
+    </header>
+    <div class="news__content">
+      <div class="row justify-content-center">
+        <div class="col-12 col-xl col-md-5 news__item wow animated fadeInLeft">
+          <div class="news__img">
+            <div class="news__date"><span>27</span>/ 6</div>
+            <img src="../img/homepage/news-2.jpg" alt="">
+          </div>
+          <div class="news__stat">
+            <div><i class="far fa-comment"></i><span>135</span></div>
+            <div><i class="fas fa-calendar-alt"></i><span>2016-03-02 / 13:10:20</span></div>
+          </div>
+          <h2 class="news__title">Hội thảo Google Extended I/O được tổ chức tại StarHub</h2>
+          <p class="news__txt">Thảo luận những xu hướng thiết kế và nền tảng công nghệ nổi bật được Google đưa vào áp dụng trong năm 2017 và 2018.</p>
+          <button class="news__more">Đọc thêm</button>
+        </div>
+        <div class="col-12 col-xl col-md-5 news__item wow animated fadeInUp">
+          <div class="news__img">
+            <div class="news__date"><span>1</span>/ 7</div>
+            <img src="../img/homepage/news-1.jpg" alt="">
+          </div>
+          <div class="news__stat">
+            <div><i class="far fa-comment"></i><span>26</span></div>
+            <div><i class="fas fa-calendar-alt"></i><span>2016-01-28 / 09:30:20</span></div>
+          </div>
+          <h2 class="news__title">Sự kiện RISE được tổ chức lần đầu tiên tại StarHub</h2>
+          <p class="news__txt">Nơi quy tụ các diễn giả, tập đoàn công nghệ, nhà đầu tư toàn cầu. Thảo luận những diễn biến mới nhất về khởi nghiệp trên thế giới.</p>
+          <button class="news__more">Đọc thêm</button>
+        </div>
+        <div class="col-12 col-xl col-md-5 news__item wow animated fadeInRight">
+          <div class="news__img">
+            <div class="news__date"><span>10</span>/ 7</div>
+            <img src="../img/homepage/news-3.jpg" alt="">
+          </div>
+          <div class="news__stat">
+            <div><i class="far fa-comment"></i><span>55</span></div>
+            <div><i class="fas fa-calendar-alt"></i><span>2016-01-15 / 14:15:26</span></div>
+          </div>
+          <h2 class="news__title">Ngày hội dành cho các Designer Việt Nam và quốc tế</h2>
+          <p class="news__txt">Hội thảo là nơi giao lưu, chia sẻ, học hỏi, thiết lập quan hệ hợp tác trong cộng đồng designer trong và ngoài Việt Nam.</p>
+          <button class="news__more">Đọc thêm</button>
+        </div>
+      </div>
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next <span>&gt;</span></a></li>
+        <li class="page-item"><a class="page-link" href="#">Last <span>&gt;&gt;</span></a></li>
+      </ul>
+    </div>
+  </section><!-- end Site News -->
+
+  <!-- Site Footer -->
+  <section class="site__footer section--pd">
+    <div class="row justify-content-around wow animated fadeInUp">
+      <div class="footer__contact col-12 col-lg-4 ">
+        <h2>Liên hệ</h2>
+        <p>Công ty TNHH một thành viên StarHub Coworking Space</p>
+        <p>Giấy chứng nhận ĐKKD số : 0107511134 do Sở KH&ĐT Hà Nội cấp ngày 01/02/2015</p>
+        <ul class="contact__detail list-unstyled">
+          <li><i class="fas fa-map-marker-alt"></i><span>số 4, ngõ 14, đường Nguyễn Đình Chiều, quận Hai Bà Trưng, Hà Nội</span></li>
+          <li><i class="fas fa-mobile-alt"></i><span>0934 969 999</span></li>
+          <li><i class="far fa-envelope"></i><span>info@starhub.com</span></li>
+          <li><i class="far fa-clock"></i><span>9:00AM - 21:00PM </span></li>
+        </ul>
+        <ul class="contact__social list-inline">
+          <li class="list-inline-item"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li class="list-inline-item"><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+          <li class="list-inline-item"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer__update col-12 col-lg-4 ">
+        <h2>Tin tức StarHub</h2>
+        <p>Hãy đăng ký để có thể nhận được những tin tức về sự kiện và chương trình ưu đãi mới nhất sắp diễn ra tại StarHub</p>
+        <form action="">
+            <input type="text" class="form-control" id="updateName" placeholder="Tên của bạn">
+            <input type="email" class="form-control" id="updateEmail" placeholder="Email của bạn">
+            <textarea class="form-control" id="updateMessage" rows="3" placeholder="Yêu cầu của bạn"></textarea>
+            <button type="submit">Đăng ký</button>
+        </form>
+      </div>
+      <div class="footer__insta d-none d-lg-block col-lg-4 ">
+        <h2>Instagram</h2>
+        <p>StarHub đã có tài khoản Instagram chính thức. Cùng like và theo dõi nhé</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-4">
+              <img src="../img/homepage/Insta-1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <img src="../img/homepage/Insta-2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <img src="../img/homepage/Insta-3.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <img src="../img/homepage/Insta-4.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <img src="../img/homepage/Insta-5.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <img src="../img/homepage/Insta-6.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="footer__to-top"><i class="fas fa-chevron-up"></i></button>
+  </section><!-- end Site Footer -->
+  
+  <!-- Site Login -->
+  <div id="logIn" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Welcome back!</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <label for="formUser">Email hoặc username</label>
+              <input type="text" class="form-control" id="formUser">
+            </div>
+            <div class="form-group">
+              <label for="formPW">Mật khẩu</label>
+              <input type="password" class="form-control" id="formPW">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="formCheck">
+                  <label class="form-check-label" for="formCheck">
+                    Ghi nhớ
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Đăng nhập</button>  
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p>Bạn chưa là thành viên? <a href="">Đăng ký tại đây</a></p>
+        </div>
+      </div>
+    </div>
+  </div><!-- end Site Login -->
+
+  <!-- JavaScript Libraries --> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Main JavaScript Files -->
+  <script src="../js/Main.js"></script>
+  <script src="../js/Homepage.js"></script>
+</body>
+</html>
